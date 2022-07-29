@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct NavigationContainerView<Content: View>: View {
+public struct NavigationContainerView<Content: View>: View {
 	
 	@ObservedObject private var navigationViewModel: NavigationViewModel = .init()
 	
@@ -17,7 +17,7 @@ struct NavigationContainerView<Content: View>: View {
 		self.content = content()
 	}
 	
-	var body: some View {
+	public var body: some View {
 		let isRoot = navigationViewModel.currentScreen == nil
 		
 		return ZStack {

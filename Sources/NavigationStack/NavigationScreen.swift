@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct NavigationScreen<Destination: View, Label: View>: View {
+public struct NavigationScreen<Destination: View, Label: View>: View {
 	
 	@EnvironmentObject private var navigationViewModel: NavigationViewModel
 	
@@ -22,7 +22,7 @@ struct NavigationScreen<Destination: View, Label: View>: View {
 		self.label = label
 	}
 	
-	var body: some View {
+	public var body: some View {
 		label()
 			.contentShape(Rectangle())
 			.onTapGesture {

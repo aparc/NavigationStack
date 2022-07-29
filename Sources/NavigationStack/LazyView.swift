@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct LazyView<Content: View>: View {
+public struct LazyView<Content: View>: View {
 	
 	private let build: () -> Content
 	
@@ -15,7 +15,7 @@ struct LazyView<Content: View>: View {
 		self.build = content
 	}
 	
-    var body: some View {
+	public var body: some View {
         build()
     }
 }

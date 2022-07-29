@@ -7,6 +7,6 @@
 
 import Foundation
 
-enum NavigationType {
+public enum NavigationType {
 	case forward, back
 }
