@@ -14,7 +14,7 @@ public struct NavigationScreen<Destination: View, Label: View>: View {
 	private let destination: () -> Destination
 	private let label: () -> Label
 	
-	init(
+	public init(
 		destination: @autoclosure @escaping () -> Destination,
 		@ViewBuilder _ label: @escaping () -> Label
 	) {

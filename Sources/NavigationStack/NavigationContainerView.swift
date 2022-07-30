@@ -13,7 +13,7 @@ public struct NavigationContainerView<Content: View>: View {
 	
 	private let content: Content
 	
-	init(@ViewBuilder content: @escaping () -> Content) {
+	public init(@ViewBuilder content: @escaping () -> Content) {
 		self.content = content()
 	}
 	

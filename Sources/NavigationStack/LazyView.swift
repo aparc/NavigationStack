@@ -11,7 +11,7 @@ public struct LazyView<Content: View>: View {
 	
 	private let build: () -> Content
 	
-	init(_ content: @autoclosure @escaping () -> Content) {
+	public init(_ content: @autoclosure @escaping () -> Content) {
 		self.build = content
 	}
 	
